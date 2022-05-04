@@ -3,7 +3,7 @@
 }
 
 .imagem{
-    background-image: url(https://i.imgur.com/d5bMdDJ.jpg);
+    background-image: url(https://i.imgur.com/2VCnboM.jpg);
     background-repeat: no-repeat; 
     width: 100vh;
     min-height: 100vh;
@@ -13,4 +13,10 @@
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.botao1{
+    background-color: green !important;
+    color: white !important;
+
 }

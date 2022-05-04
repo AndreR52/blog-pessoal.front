@@ -6,6 +6,8 @@ import Home from './paginas/home/Home';
 import Login from './paginas/login/Login'
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario'
 import './App.css';
+import ListaTema from './components/temas/listaTema/ListaTema';
+import ListaPostagem from './components/postagem/listaPostagem/ListaPostagem';
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
     <Route path="/logar" element={<Login />} />
     <Route path="/home" element={<Home />} />
     <Route path="/cadastrar" element={<CadastroUsuario />} />
+    <Route path="/temas" element={<ListaTema />} />
+    <Route path="/postagem" element={<ListaPostagem />} />
     
     </Routes>
     </div>

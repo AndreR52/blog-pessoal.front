@@ -41,7 +41,7 @@ function Login() {
                 
                 alert('Usuario logado com sucesso!');
             }catch(error){
-                alert('Dados do usuário inconsistentes. Erro so logar!');
+                alert('Dados do usuário inconsistentes. Erro ao logar!');
 
             }
         }
@@ -55,7 +55,7 @@ function Login() {
                         <TextField value={usuarioLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                         <TextField value={usuarioLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                         <Box marginTop={2} textAlign='center'>                            
-                                <Button type='submit' variant='contained' color='primary'>
+                                <Button type='submit' variant='contained' className='botao1'>
                                     Logar
                                 </Button>                            
                         </Box>
