@@ -1,10 +1,9 @@
 import React ,  { ChangeEvent, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import Usuario from '../../models/Usuario';
 import { cadastroUsuario } from '../../services/Service';
-import './CadastroUsuario.css'
-import { Box, Button, Grid, TextField, Typography } from '@material-ui/core'
-import { Link } from 'react-router-dom';
+import './CadastroUsuario.css';
+import { Box, Button, Grid, TextField, Typography } from '@material-ui/core';
 
 function CadastroUsuario(){
 

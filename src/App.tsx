@@ -8,6 +8,10 @@ import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario'
 import './App.css';
 import ListaTema from './components/temas/listaTema/ListaTema';
 import ListaPostagem from './components/postagem/listaPostagem/ListaPostagem';
+import CadastroPostagem from './components/postagem/cadastroPostagem/CadastroPostagem';
+import CadastroTema from './components/temas/cadastroTema/CadastroTema';
+import DeletarPostagem from './components/postagem/deletarPostagem/DeletarPostagem';
+import DeletarTema from './components/temas/deletarTema/DeletarTema';
 
 
 function App() {
@@ -21,7 +25,13 @@ function App() {
     <Route path="/home" element={<Home />} />
     <Route path="/cadastrar" element={<CadastroUsuario />} />
     <Route path="/temas" element={<ListaTema />} />
-    <Route path="/postagem" element={<ListaPostagem />} />
+    <Route path="/postagens" element={<ListaPostagem />} />
+    <Route path="/formularioPostagem" element={<CadastroPostagem />} />
+    <Route path="/formularioPostagem/:id" element={<CadastroPostagem />} />
+    <Route path="/formularioTema" element={<CadastroTema />} />
+    <Route path="/formularioTema/:id" element={<CadastroTema />} />
+    <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
+    <Route path="/deletarTema/:id" element={<DeletarTema />} />
     
     </Routes>
     </div>
