@@ -6,6 +6,10 @@
     height: 100vh;
 }
 
+.caixaTexto{
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
 .titulo{
     color:white !important;
     font-weight: bold !important;
