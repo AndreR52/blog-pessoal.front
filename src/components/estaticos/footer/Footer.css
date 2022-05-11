@@ -1,11 +1,12 @@
 .box1{
     background-color: #093709; 
-    height: 80px;
+    height: 30px;
 }
 
 .box2{
     background-color: black;
-    height: 55px;
+    height: 45px;
+    padding-top: 5px;
 }
 
 .redes{
