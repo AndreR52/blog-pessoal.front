@@ -42,24 +42,38 @@ function DeletarPostagem() {
             }
         })
     }   
-    function sim() {
+    async function sim() {
         history('/postagens')
-        deleteId(`/postagens/${id}`, {
-          headers: {
-            'Authorization': token
-          }
-        });
-        toast.success("Postagem deletada com sucesso",{
-          position: "top-right",
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: false,
-          theme: "colored",
-          progress: undefined, 
-        })
-      }    
+
+        try {
+          deleteId(`/postagens/${id}`, {
+            headers: {
+              'Authorization': token
+            }
+          });
+          toast.success("Postagem deletada com sucesso",{
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            theme: "colored",
+            progress: undefined, 
+          });
+        } catch (error) {
+          toast.error('Erro ao deletar postagem.', {
+            position: "top-right",
+            autoClose: 2500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            theme: "colored",
+            progress: undefined,
+            });
+        }
+    }
       function nao() {
         history('/postagens')
       }
