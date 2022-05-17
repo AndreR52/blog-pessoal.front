@@ -108,7 +108,7 @@ function CadastroUsuario(){
                         <TextField value={user.foto} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='foto' label='foto' variant='outlined' name='foto' margin='normal' fullWidth placeholder= 'Insira um link de foto' required />
                         <TextField value={user.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal' fullWidth placeholder= 'Insira um email válido' required />
                         <TextField value={user.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth placeholder= 'Insira no mínimo 8 caracteres' required />
-                        <TextField value={confirmarSenha} onChange={(e:ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth placeholder= 'Insira novamente a senha' required />
+                        <TextField value={confirmarSenha} onChange={(e:ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='confirmar Senha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth placeholder= 'Insira novamente a senha' required />
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/logar' className='text-decorator-none'>
                                 <Button variant='contained' className='botaoCancelar'>
